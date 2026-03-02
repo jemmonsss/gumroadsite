@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>GM Asset Lab Icon</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c6a9ff"/>
+      <stop offset="100%" stop-color="#6d38d9"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f1e8ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f1e8ff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="15" fill="#0b0a14"/>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="12" fill="url(#bg)"/>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="12" fill="none" stroke="url(#stroke)" stroke-width="1.5"/>
+  <path fill="#140a2e" d="M22 42V22h7.6l4.4 8.1L38.4 22H46v20h-5.7V31.8l-4.2 7.6h-4l-4.4-7.8V42z"/>
+  <path fill="#f3e9ff" d="M46.5 18.5h-29v-3h29z" opacity="0.7"/>
+  <path fill="#f3e9ff" d="M46.5 48.5h-29v-3h29z" opacity="0.35"/>
+</svg>
