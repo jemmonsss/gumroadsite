@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asset Store</title>
+  <meta name="description" content="Premium digital assets powered by Gumroad checkout.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span data-site-brand>Asset Store</span>
+    </a>
+    <nav class="main-nav" data-nav></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Digital Asset Store</p>
+        <h1 data-hero-title>Ship faster with polished digital assets.</h1>
+        <p data-hero-subtitle>Everything is sold through Gumroad checkout, but managed from one clean storefront.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" data-hero-cta href="#categories">Browse Categories</a>
+          <a class="button button-secondary" href="#featured">See Featured</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <p class="panel-title">How this works</p>
+        <ol>
+          <li>Add your Gumroad links in <code>assets/js/products.js</code>.</li>
+          <li>Update colors/text in <code>assets/js/site-config.js</code>.</li>
+          <li>Deploy this folder to GitHub Pages.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2>Shop by category</h2>
+        <p>Separate pages keep each product line organized and easy to browse.</p>
+      </div>
+      <div class="category-grid" data-category-grid></div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-head">
+        <h2>Featured assets</h2>
+        <p>These cards can auto-fill details from your Gumroad links when available.</p>
+      </div>
+      <div class="product-grid" data-featured-grid></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-footer-text>Built for creators.</p>
+  </footer>
+
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/render.js"></script>
+</body>
+</html>
