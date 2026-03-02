@@ -94,6 +94,7 @@
     if (product.price) {
       pills.push('<span class="pill price">' + escapeHtml(product.price) + "</span>");
     }
+    pills.push('<span class="pill">Instant download</span>');
     if (Array.isArray(product.tags)) {
       product.tags.slice(0, 3).forEach(function (tag) {
         pills.push('<span class="pill">' + escapeHtml(tag) + "</span>");
@@ -120,7 +121,7 @@
     var categoryName = getCategoryName(product.category);
     var titleText = product.title || titleFromUrl(product.gumroadUrl || "");
     var descriptionText =
-      product.description || "Digital asset sold through secure Gumroad checkout.";
+      product.description || "Premium digital asset with secure Gumroad checkout and fast delivery.";
     var card = document.createElement("article");
 
     card.className = "product-card";
@@ -143,7 +144,7 @@
       '<div class="product-actions">' +
       '<a class="button button-primary gumroad-button" href="' +
       escapeHtml(product.gumroadUrl || "#") +
-      '">Buy on Gumroad</a>' +
+      '">Buy Now</a>' +
       '<a class="button button-secondary" href="' +
       escapeHtml(product.gumroadUrl || "#") +
       '" target="_blank" rel="noopener">View Details</a>' +
@@ -236,13 +237,14 @@
           '">' +
           '<span class="category-count">' +
           String(count) +
-          " products</span>" +
+          " items</span>" +
           "<h3>" +
           escapeHtml(category.name) +
           "</h3>" +
           "<p>" +
           escapeHtml(category.description || "") +
           "</p>" +
+          '<span class="category-link">Explore category</span>' +
           "</a>"
         );
       })
@@ -257,7 +259,7 @@
 
     if (!Array.isArray(list) || list.length === 0) {
       grid.innerHTML =
-        '<div class="empty-state">No products yet. Add your Gumroad links in assets/js/products.js.</div>';
+        '<div class="empty-state">No products listed yet. Add your first item in assets/js/products.js.</div>';
       return;
     }
 
